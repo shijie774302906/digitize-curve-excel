@@ -25,35 +25,29 @@ If a user explicitly accepts a redraw or overlay that still has conservative str
 
 ## Test Effect Gallery
 
-Representative source charts and output examples are included under [`examples/test-effects/`](examples/test-effects/).
+Representative output examples are included under [`examples/test-effects/`](examples/test-effects/). These images show high-precision curve extraction, smoothed multi-series extraction, reference-line handling, and user-visual-accepted outputs.
 
-### High-Precision Strict PASS
+### CPT Multi-Panel Overlay
 
-The teal depth-profile example passes strict QA and produces final XLSX, overlay, redraw, and audit artifacts.
+![CPT multi-panel overlay result](examples/test-effects/cpt-multi-panel-overlay-result.png)
 
-![Teal depth profile source](examples/test-effects/teal-depth-profile-source.png)
+### CPT Before/After Panel Results
 
-![Teal depth profile high-precision result](examples/test-effects/teal-depth-profile-high-precision-result.png)
+![CPT three-panel before/after](examples/test-effects/cpt-three-panel-before-after.png)
 
-### User-Visual-Accepted Example
+### Smoothed DSS Multi-Series Curves
 
-The CPT `qc` example demonstrates the intended reporting distinction: the redrawn curve is visually usable, while strict QA may still flag conservative row-gap failures on noisy depth profiles.
+![DSS smoothed multi-series result](examples/test-effects/dss-smoothed-multi-series-result.png)
 
-![CPT multi-panel source](examples/test-effects/cpt-multi-panel-source.png)
+### Reference Line Handling
 
-![QC depth profile user-visual result](examples/test-effects/qc-depth-profile-user-visual-result.png)
+![u0 reference line result](examples/test-effects/u0-reference-line-result.png)
 
-### Additional Source Fixtures
+### Single Depth-Profile Outputs
 
-These images exercise multi-series plots, same-color labels, dashed references, marker curves, and depth-profile extraction.
+![Teal depth profile result](examples/test-effects/teal-depth-profile-result.png)
 
-![Piezo profile source](examples/test-effects/piezo-profile-source.png)
-
-![DSS modulus reduction source](examples/test-effects/dss-modulus-reduction-source.png)
-
-![Depth profile with u0 reference source](examples/test-effects/depth-profile-u0-reference-source.png)
-
-![Red depth profile source](examples/test-effects/red-depth-profile-source.png)
+![Red depth profile result](examples/test-effects/red-depth-profile-result.png)
 
 ## Dependencies
 
