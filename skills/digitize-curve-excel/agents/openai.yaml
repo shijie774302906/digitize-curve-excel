@@ -1,0 +1,7 @@
+interface:
+  display_name: "Curve Digitizer Excel"
+  short_description: "Digitize plot curves into XLSX with accuracy-gated overlays, redraws, and audits."
+  default_prompt: "Use $digitize-curve-excel in accuracy mode: confirm precision mode, target curves, colors, data relationship, line style, and same-color exclusions; run the accuracy wrapper from a fresh config; then publish strict PASS results or clearly label user-accepted visual results."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Generated digitization outputs
+benchmark_runs/
+attempts/
+final/
+outputs/
+*_digitized.csv
+*_digitized_redrawn.xlsx
+*_excel_gap.csv
+*_redrawn.png
+*_redrawn.svg
+*_redrawn.pdf
+*_redrawn_original_size.png
+*_redraw_overlay.png
+*_skeleton_overlay.png
+*_mask.png
+*_red_mask.png
+strict_qa.json
+strict_qa_summary.md
+strict_qa_overlay.png
+audit.json
+audit_summary.md
+next_steps.md
+stdout.txt
+stderr.txt
+command.json
+
+# Local benchmark image folders are not published by default.
+benchmark/
