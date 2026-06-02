@@ -23,6 +23,38 @@ skills/digitize-curve-excel/
 
 If a user explicitly accepts a redraw or overlay that still has conservative strict-QA failures, report it as `user_visual_accepted`; do not label it as strict PASS.
 
+## Test Effect Gallery
+
+Representative source charts and output examples are included under [`examples/test-effects/`](examples/test-effects/).
+
+### High-Precision Strict PASS
+
+The teal depth-profile example passes strict QA and produces final XLSX, overlay, redraw, and audit artifacts.
+
+![Teal depth profile source](examples/test-effects/teal-depth-profile-source.png)
+
+![Teal depth profile high-precision result](examples/test-effects/teal-depth-profile-high-precision-result.png)
+
+### User-Visual-Accepted Example
+
+The CPT `qc` example demonstrates the intended reporting distinction: the redrawn curve is visually usable, while strict QA may still flag conservative row-gap failures on noisy depth profiles.
+
+![CPT multi-panel source](examples/test-effects/cpt-multi-panel-source.png)
+
+![QC depth profile user-visual result](examples/test-effects/qc-depth-profile-user-visual-result.png)
+
+### Additional Source Fixtures
+
+These images exercise multi-series plots, same-color labels, dashed references, marker curves, and depth-profile extraction.
+
+![Piezo profile source](examples/test-effects/piezo-profile-source.png)
+
+![DSS modulus reduction source](examples/test-effects/dss-modulus-reduction-source.png)
+
+![Depth profile with u0 reference source](examples/test-effects/depth-profile-u0-reference-source.png)
+
+![Red depth profile source](examples/test-effects/red-depth-profile-source.png)
+
 ## Dependencies
 
 Install Python dependencies with:
@@ -47,7 +79,7 @@ If you have benchmark fixtures, run:
 python skills/digitize-curve-excel/scripts/run_regression_cases.py --benchmark-root path/to/workspace
 ```
 
-The benchmark helper expects pre-existing `benchmark_runs/<case_id>/case_config.json` fixtures. Private benchmark images and generated outputs are not included in this repository.
+The benchmark helper expects pre-existing `benchmark_runs/<case_id>/case_config.json` fixtures. Full private benchmark runs and generated audit directories are not included in this repository; the gallery above contains only a small set of representative test-effect images.
 
 ## Repository Notes
 
